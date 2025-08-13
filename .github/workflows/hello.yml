@@ -1,0 +1,11 @@
+name: Saurav says hi
+on: push
+jobs:
+  perform_hello:
+    runs on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print greetings by github
+        run: echo "Hello from GitHub Actions! from ubuntu"
