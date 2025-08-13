@@ -9,3 +9,8 @@ jobs:
 
       - name: Print greetings by github
         run: echo "Hello from GitHub Actions! from ubuntu"
+
+      - name: Run multiple commands
+        run: echo "Step 1"
+          node -v
+          npm -v
